@@ -1,0 +1,26 @@
+/* src/fonts.css */
+@font-face {
+    font-family: 'SfBold';
+    src: url('./fonts/SF-Pro-Display-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'SfLight';
+    src: url('./fonts/SF-Pro-Display-Light.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SfRegular';
+    src: url('./fonts/SF-Pro-Display-Regular.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SfSemibold';
+    src: url('./fonts/SF-Pro-Display-Semibold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
