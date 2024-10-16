@@ -4,6 +4,7 @@ import Home from "./components/home";
 import Chatbot from "./components/chatbot";
 import Assistant from "./components/assistant";
 import logo from "./assets/react.svg";
+import FAQ from "./components/faq";
 
 // import PrimaryButton from "./components/button";
 import SecondaryButton from "./components/button2";
@@ -107,7 +108,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/chat" element={<Chatbot />} />
             <Route path="/ai" element={<Assistant />} />
-            <Route path="/faq" element={<Assistant />} />
+            <Route path="/faq" element={<FAQ />} />
           </Routes>
         </main>
       </div>

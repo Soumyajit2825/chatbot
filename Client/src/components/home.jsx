@@ -1,9 +1,10 @@
 import { ArrowRight } from "lucide-react";
 import FeatureCard from "./feature";
-import FAQItem from "./faq";
 import Section from "./section";
-import { features, faqs } from "./data";
+import { features } from "./data";
 import bg from "../assets/bgGridGrey.svg";
+import CarouselDemo from "./motivation";
+
 import "../fonts.css";
 import PrimaryButton from "./button";
 
@@ -46,40 +47,22 @@ const Home = () => {
       </header>
 
       <main className="container mx-auto px-4 py-16">
-        <Section title="Key Features">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Section title="Features">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <FeatureCard key={index} {...feature} />
+              <FeatureCard
+                key={index}
+                icon={feature.icon}
+                title={feature.title}
+                description={feature.description}
+              />
             ))}
           </div>
         </Section>
 
         <Section title="Why We Built This">
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            <p className="text-gray-700 mb-4">
-              In today&apos;s fast-paced world, we recognized the need for a
-              more intuitive and efficient way to interact with AI. Our goal was
-              to create a platform that combines the power of text-based
-              chatbots with the convenience of voice commands.
-            </p>
-            <p className="text-gray-700 mb-4">
-              By offering both chat and voice interfaces, we&apos;re making AI
-              assistance more accessible and natural for users in various
-              situations – whether you&apos;re at your desk or on the go.
-            </p>
-            <p className="text-gray-700">
-              Our AI Voice Assistant Chatbot aims to bridge the gap between
-              human communication and artificial intelligence, providing a
-              seamless experience that adapts to your preferences and needs.
-            </p>
-          </div>
-        </Section>
-
-        <Section title="Frequently Asked Questions">
-          <div className="bg-white p-8 rounded-lg shadow-md">
-            {faqs.map((faq, index) => (
-              <FAQItem key={index} {...faq} />
-            ))}
+          <div className="flex justify-center items-center">
+            <CarouselDemo />
           </div>
         </Section>
 

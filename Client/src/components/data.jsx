@@ -15,6 +15,11 @@ export const features = [
     icon: Zap,
     title: "Real-time Responses",
     description: "Experience lightning-fast AI-powered answers to your queries."
+  },
+  {
+    icon: Zap,
+    title: "Real-time Responses",
+    description: "Experience lightning-fast AI-powered answers to your queries."
   }
 ];
 
@@ -31,4 +36,27 @@ export const faqs = [
     question: "Is my data secure?",
     answer: "We take data privacy seriously. All communications are encrypted, and we do not store personal conversation data beyond the current session."
   }
+];
+
+export const carouselItems = [
+  {
+    title: "Slide 1",
+    description: "This is the first slide.",
+  },
+  {
+    title: "Slide 2",
+    description: "This is the second slide.",
+  },
+  {
+    title: "Slide 3",
+    description: "This is the third slide.",
+  },
+  {
+    title: "Slide 4",
+    description: "This is the fourth slide.",
+  },
+  {
+    title: "Slide 5",
+    description: "This is the fifth slide.",
+  },
 ];

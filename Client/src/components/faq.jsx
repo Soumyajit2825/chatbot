@@ -1,10 +1,15 @@
+import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from './ui/accordion';
+import { faqs } from './data';
 
-// eslint-disable-next-line react/prop-types
-const FAQItem = ({ question, answer }) => (
-  <div className="mb-6 last:mb-0">
-    <h4 className="text-lg font-semibold mb-2">{question}</h4>
-    <p className="text-gray-600">{answer}</p>
-  </div>
-);
-
-export default FAQItem;
+export default function FAQ() {
+  return (
+    <Accordion type="single" collapsible>
+      {faqs.map((faq, index) => (
+        <AccordionItem key={index} value={`item-${index}`}>
+          <AccordionTrigger>{faq.question}</AccordionTrigger>
+          <AccordionContent>{faq.answer}</AccordionContent>
+        </AccordionItem>
+      ))}
+    </Accordion>
+  );
+}
