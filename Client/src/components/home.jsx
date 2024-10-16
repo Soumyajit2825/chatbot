@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import FeatureCard from "./feature";
 import Section from "./section";
 import { features } from "./data";
@@ -67,10 +66,9 @@ const Home = () => {
         </Section>
 
         <Section title="Ready to Get Started?" className="text-center">
-          <button className="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition-colors inline-flex items-center">
-            Try It Now
-            <ArrowRight className="ml-2" />
-          </button>
+          <div className="items-center flex justify-center">
+            <PrimaryButton title="Try It Now " className="relative z-10" />
+          </div>
         </Section>
       </main>
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Send, User, Bot } from "lucide-react";
 import axios from "axios";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
@@ -49,7 +50,10 @@ const Chatbot = () => {
               {msg.text}
             </div>
             {msg.sender === "user" && (
-              <User size={24} className="text-blue-500 mb-2" />
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="User" />
+                <AvatarFallback>U</AvatarFallback>
+              </Avatar>
             )}
           </div>
         ))}
